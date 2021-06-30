@@ -1,0 +1,17 @@
+CUDA_VISIBLE_DEVICES=$1 python main_graph.py \
+	--input_file ./datasets/ob \
+	--output_file ./checkpoints \
+	--exp $2 \
+	--train \
+	--val \
+	--batch_size 512 \
+	--model_def ContextModule \
+	--gpu \
+	--gpu_number 0 \
+	--learning_rate 0.001 \
+	--lr_step 4000 \
+	--lr_step_gamma 0.1 \
+	--log_batch 50 \
+	--val_epoch 10 \
+	--snapshot_epoch 100 \
+	--num_iterations 10000 \
