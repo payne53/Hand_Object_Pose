@@ -39,3 +39,17 @@ python main.py \
   --gpu_number 0 \
   --pretrained_model ./checkpoints/fhad_best_epoch.pkl
 ```
+If you think this work helps you, please cite our paper:
+```
+@inproceedings{JHOPE,
+  author    = {Nan Zhuang and
+               Yadong Mu},
+  title     = {Joint Hand-Object Pose Estimation with Differentiably-Learned Physical
+               Contact Point Analysis},
+  booktitle = {{ICMR} '21: International Conference on Multimedia Retrieval, Taipei,
+               Taiwan, August 21-24, 2021},
+  pages     = {420--428},
+  publisher = {{ACM}},
+  year      = {2021}
+}
+```
